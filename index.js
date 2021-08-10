@@ -16,6 +16,9 @@ const projects = [
     },
     {
     	name: 'social-media-dashboard-with-theme-switcher-master'
+    }, 
+    {
+        name: 'chat-app-css-illustration-master'
     }
 ];
 
