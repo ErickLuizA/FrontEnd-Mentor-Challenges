@@ -1,0 +1,257 @@
+@import 'variables.css';
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: 'Rubik', sans-serif;
+  color: var(--text);
+  background-color: var(--app-background);
+}
+
+html, body, main {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.purple-form {
+  position: absolute;
+  left: -40%;
+  top: -15%;
+  width: 90%;
+  height: 90%;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;  
+  background: var(--background-gradient);
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 1;
+  padding: 2rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.phone {
+  width: 90%;
+  max-width: 280px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 5px 10px 50px  rgba(0, 0, 0, 0.5);
+  border-radius: 3rem;
+  border: 1rem solid white;
+  background-color: var(--app-background);
+}
+
+.phone-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: var(--app-header-gradient);
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.phone-header-bar{
+  background-color: white;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  width: 60%;
+  height: 2rem;
+  align-self: center;
+}
+
+.phone-header-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+
+.phone-header-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.phone-header-image {
+  width: 30px;
+  border-radius: 50%;
+  border: 0.2rem solid white;
+  margin-left: 0.4rem;
+  margin-right: 0.8rem;
+}
+
+.phone-header-text-container {
+  align-self: center;
+}
+
+.phone-header-text-name {
+  color: white;
+  font-size: 1rem;
+}
+
+.phone-header-text-status {
+  font-size: 0.8rem;
+  color: rgb(218, 213, 213);
+}
+
+.messages-container {
+  list-style: none;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  background-color: var(--message-background);
+  color: var(--message-text);
+  padding: 1rem;
+  border-radius: 0.4rem;
+  width: 70%;
+  margin-bottom: 1rem;
+}
+
+.message-right {
+  align-self: flex-end;
+}
+
+.message-image-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.message-image {
+  margin-bottom: 1rem;
+  width: 20%;
+  border-radius: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--button-gradient);
+  width: 80%;
+  padding: 1rem;
+  border-radius: 1.2rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.circle {
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid white;
+  opacity: 0.5;
+  border-radius: 50%;
+}
+
+.button-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.button-text {
+  margin-left: 0.4rem;
+  font-weight: 400;
+}
+
+.button-money {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.input-container {
+  display: flex;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  background-color: white;
+  border-radius: 2rem;
+}
+
+.input {
+  width: 90%;
+  border-radius: 2rem;
+  padding: 1rem;
+  border: none;
+}
+
+.submit-button {
+  background-color: var(--button-background);
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+.heading {
+  color: var(--heading);
+  font-size: 4rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.paragraph {
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+}
+
+
+@media screen and (min-device-width: 800px) {
+  .purple-form {
+    width: 80%;
+    left: -25%;
+    top: -10%;
+  }
+}
+
+@media screen and (min-device-width: 1100px) {
+  .purple-form {
+    width: 35%;
+    left: -10%;
+    top: 0%;
+  }
+
+  .container {
+    flex-direction: row;
+    justify-content: space-evenly;
+    max-width: 1400px;
+    align-self: center;
+  }
+
+  .heading {
+    text-align: start;
+  }
+
+  .paragraph {
+    text-align: start;
+  }
+  
+  .content {
+    width: 50%;
+  }
+}
