@@ -22,8 +22,10 @@
 
         if(rootClassList.contains('dark')) {
           rootClassList.remove('dark')
+          localStorage.setItem('light', 'true')
         } else {
           rootClassList.add('dark')
+          localStorage.removeItem('light')
         }
       }
 
