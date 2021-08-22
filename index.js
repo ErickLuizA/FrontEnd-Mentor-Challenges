@@ -19,6 +19,9 @@ const projects = [
     }, 
     {
         name: 'chat-app-css-illustration-master'
+    },
+    {
+        name: 'rest-countries-api-with-color-theme-switcher-master'
     }
 ];
 
