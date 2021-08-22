@@ -4,7 +4,7 @@
       @click="openDropdown" 
       ref="input"
       tabindex="0" 
-      class="dark:bg-gray-800 dark:text-gray-100 bg-gray-200 text-gray-700 p-5 rounded cursor-pointer focus:outline-none focus:ring-1 focus:ring-gray-600 flex ">
+      class="dark:bg-gray-800 dark:text-gray-100 bg-gray-200 text-gray-700 flex flex-row-reverse gap-5 p-4 justify-end rounded cursor-pointer focus:outline-none focus:ring-1 focus:ring-gray-600">
       <span class="mr-4">{{ selectedRegion }}</span>
       <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
